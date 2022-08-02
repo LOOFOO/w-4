@@ -59,16 +59,16 @@ img {
   height: auto; }
 
 .container {
-  max-width: 1296px;
-  padding-right: 36px;
-  padding-left: 36px;
-  margin: 0 auto; }
+  max-width: 1320PX;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px; }
 
-.banner {
+.header {
   background-color: #AA0601;
   color: white; }
 
-.banner img {
+.header img {
   width: 80px;
   height: 49px; }
 
@@ -88,14 +88,15 @@ img {
   padding-bottom: 16px; }
 
 .list ul {
+  width: 492px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-
-.list li {
-  padding-left: 64px; }
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 @media (max-width: 992px) {
   .list {
@@ -137,16 +138,27 @@ img {
           justify-content: space-between;
   padding-bottom: 36px; }
 
-.fh ul, .ff ul {
+.fh ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.fhlist {
+  width: 40%; }
+
+.ff ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-
-.fhlist {
-  padding-right: 48px; }
 
 .fh img {
   height: 48px;
@@ -215,7 +227,7 @@ a {
     padding-bottom: 8px; } }
 
 .backimg {
-  background-image: url(assets/images/home-header-sm.png);
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true);
   height: 787px;
   background-size: cover;
   background-position: center center; }
@@ -334,7 +346,10 @@ p {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  margin-right: -24px; }
+  .classical ul li {
+    padding-right: 24px; }
 
 .classical img {
   width: 100%; }
@@ -361,7 +376,7 @@ p {
     width: 100%; } }
 
 .back {
-  background-image: url(img/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.jpg);
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true);
   background-position: center center;
   text-align: center; }
 
@@ -415,9 +430,7 @@ p {
 
 .custpost li {
   width: 23%;
-  border: 1px solid #DEE2E6;
-  margin-right: 24px;
-  margin-bottom: 24px; }
+  border: 1px solid #DEE2E6; }
 
 .custpost p {
   font-size: 16px;
@@ -506,16 +519,25 @@ a {
   text-align: center;
   color: #000000;
   font-family: 'Roboto', sans-serif; }
+  .optical li:hover {
+    border-bottom: 8px solid #AA0601; }
 
 .optical ul {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.optical h2 {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  padding: 24px 0; }
 
 .optical li {
   width: 33.3%;
-  border: 1px solid #DCDCDC;
-  padding-top: 30px; }
+  border: 1px solid #DCDCDC; }
 
 @media (max-width: 992px) {
   .optical {
@@ -551,7 +573,8 @@ h2 {
   font-size: 32px;
   line-height: 48px;
   font-family: 'Noto Sans TC', sans-serif;
-  padding-bottom: 32px; }
+  padding-bottom: 32px;
+  color: #000; }
 
 h4 {
   color: #AA0601; }
@@ -625,5 +648,71 @@ h4 {
 
 .next, .pre {
   background-color: #F2F2F2; }
+
+.sunglasses {
+  text-align: center;
+  color: #000000;
+  font-family: 'Roboto', sans-serif; }
+  .sunglasses li:hover {
+    border-bottom: 8px solid #AA0601; }
+
+.sunglasses ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.sunglasses h2 {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  padding: 24px 0; }
+
+.sunglasses li {
+  width: 33.3%;
+  border: 1px solid #DCDCDC; }
+
+@media (max-width: 992px) {
+  .sunglasses {
+    padding-right: 0px;
+    padding-left: 0px; }
+  .sunglasses h2 {
+    font-size: 24px;
+    line-height: 36px; } }
+
+@media (max-width: 767px) {
+  .sunglasses h2 {
+    font-size: 16px;
+    line-height: 24px; } }
+
+.collection {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: 80px 0; }
+
+.collect ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.item {
+  width: 33%; }
+
+@media (max-width: 992px) {
+  .collect {
+    padding-left: 36px;
+    padding-right: 36px; }
+  .item {
+    width: 48%; } }
+
+@media (max-width: 767px) {
+  .item {
+    width: 98%; } }
 
 /*# sourceMappingURL=all.css.map */
