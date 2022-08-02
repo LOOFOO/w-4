@@ -1,0 +1,66 @@
+.sunglasses{
+    text-align: center;
+    color: #000000;
+    font-family: 'Roboto', sans-serif; 
+    li:hover{
+        border-bottom: 8px solid #AA0601;
+    }
+}
+.sunglasses ul{
+    display: flex;
+    align-items: center;
+}
+.sunglasses h2{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding: 24px 0;
+}
+.sunglasses li{
+    width: 33.3%;
+    border: 1px solid #DCDCDC;
+}
+@media(max-width: 992px){
+    .sunglasses{
+    padding-right: 0px;
+    padding-left: 0px;
+    }
+    .sunglasses h2{
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+@media(max-width: 767px){
+    .sunglasses h2{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.collection{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 80px 0;
+}
+.collect ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+.item{
+    width: 33%;
+}
+@media(max-width: 992px){
+    .collect{
+        padding-left: 36px;
+        padding-right: 36px;
+    } 
+    .item{
+        width: 48%;
+    }
+}
+@media(max-width: 767px){
+    .item{
+        width: 98%;
+    }
+}

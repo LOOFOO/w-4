@@ -1,5 +1,5 @@
 .backimg{
-    background-image: url(assets/images/home-header-sm.png);
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true);
     height: 787px;
     background-size: cover;
     background-position: center center;
@@ -117,7 +117,12 @@ p{
 .classical ul{
     display: flex;
     justify-content: space-between;
+    margin-right: -24px;
+    li{
+        padding-right: 24px;
+    }
 }
+
 .classical img{
     width: 100%;
 }
@@ -145,7 +150,7 @@ p{
 
 
 .back{
-    background-image: url(img/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.jpg);
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true);
     background-position: center center;
     text-align: center;
 }
@@ -195,8 +200,6 @@ p{
 .custpost li{
     width: 23%;
     border: 1px solid #DEE2E6;
-    margin-right: 24px;
-    margin-bottom: 24px;
 }
 .custpost p{
     font-size: 16px;

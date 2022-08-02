@@ -2,14 +2,22 @@
     text-align: center;
     color: #000000;
     font-family: 'Roboto', sans-serif; 
+    li:hover{
+        border-bottom: 8px solid #AA0601;
+    }
 }
 .optical ul{
     display: flex;
+    align-items: center;
+}
+.optical h2{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding: 24px 0;
 }
 .optical li{
     width: 33.3%;
     border: 1px solid #DCDCDC;
-    padding-top: 30px;
 }
 @media(max-width: 992px){
     .optical{
@@ -48,6 +56,7 @@ h2{
     line-height: 48px;
     font-family: 'Noto Sans TC', sans-serif;
     padding-bottom: 32px;
+    color: #000;
 }
 h4{
     color: #AA0601;

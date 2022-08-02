@@ -1,8 +1,8 @@
-.banner{
+.header{
     background-color: #AA0601;
     color: white;  
 }
-.banner img{
+.header img{
     width: 80px;
     height: 49px;
 }
@@ -16,12 +16,12 @@
     padding-bottom: 16px;
 }
 .list ul{
+    width: 492px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
-.list li{
-    padding-left: 64px;
-}
+
 @media(max-width: 992px){
     .list{
         width: 90%;
@@ -63,12 +63,17 @@
     justify-content: space-between;
     padding-bottom: 36px;
 }
-.fh ul,.ff ul{
+.fh ul{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .fhlist{
-    padding-right: 48px;
+    width: 40%;
+}
+.ff ul{
+    display: flex;
+    align-items: center;
 }
 .fh img{
     height: 48px;
