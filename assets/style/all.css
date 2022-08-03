@@ -585,9 +585,8 @@ h4 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 .item {
   width: 24%; }
@@ -697,9 +696,8 @@ h4 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 .item {
   width: 33%; }
@@ -714,5 +712,96 @@ h4 {
 @media (max-width: 767px) {
   .item {
     width: 98%; } }
+
+.location {
+  margin-top: 96px;
+  margin-bottom: 80px; }
+  .location h2 {
+    border-left: 8PX solid #9F1213;
+    padding-left: 16px;
+    padding-bottom: 0px; }
+  .location .location-control {
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 40px; }
+  .location .select-control {
+    width: 304px;
+    height: 38px; }
+
+.section h3 {
+  font-size: 24px;
+  line-height: 36px;
+  padding: 8px 24px;
+  border: 1px solid #00000020; }
+
+.section_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -24px; }
+
+.section_item {
+  width: 33%;
+  padding-right: 24px;
+  padding-bottom: 48px; }
+
+.section_info {
+  padding: 16px 24px;
+  border: 1px solid #00000020; }
+  .section_info li {
+    padding-bottom: 8px; }
+
+.section span {
+  vertical-align: middle; }
+
+.section a {
+  color: #000; }
+
+.section button {
+  width: 100%;
+  height: 60px;
+  background-color: #0c0101; }
+  .section button h4 {
+    font-size: 19px;
+    line-height: 27px;
+    color: white; }
+
+.section_item2 {
+  width: 40%; }
+
+.section .location-map {
+  width: 60%; }
+
+@media (max-width: 992px) {
+  .section_item {
+    width: 100%; }
+  .location2 .location-map {
+    width: 97%;
+    height: 414px; }
+  .section_item2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .location2-img {
+    width: 50%;
+    padding-right: 24px; }
+  .section_item3 {
+    width: 50%; }
+  .section_info {
+    height: 76%; } }
+
+@media (max-width: 767px) {
+  .section_item {
+    width: 99%; }
+  .section_item2 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .location2-img {
+    width: 100%;
+    padding-right: 0px; }
+  .section_item3 {
+    width: 100%; } }
 
 /*# sourceMappingURL=all.css.map */
